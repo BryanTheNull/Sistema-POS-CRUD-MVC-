@@ -7,7 +7,8 @@ import java.sql.SQLException;
 /**
  * @author Bryan Vera
  * @version 1.0
- * @since 2024-04-06 Descripcion: Clase para manejar la conexión con la base de
+ * @since 2024-04-06 
+ * Descripcion: Clase para manejar la conexión con la base de
  * datos MySQL.
  */
 public class conexion {
