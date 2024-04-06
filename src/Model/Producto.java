@@ -8,4 +8,20 @@ package Model;
  */
 public class Producto {
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public void GenerarFactura(){
+    
+    }
+      
 }
+    
+
+
