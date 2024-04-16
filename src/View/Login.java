@@ -4,7 +4,7 @@ package View;
  * @author 
  * @version 1.0
  * @since 2024-04-07
- * Descripcion: Interfaz inicial del programa donde el usuario debera validar 
+ * Descripcion: Interfaz del programa donde el usuario debera validar 
  * su ingreso con sus credenciales.
  */
 public class Login extends javax.swing.JFrame {
@@ -39,10 +39,10 @@ public class Login extends javax.swing.JFrame {
         formularioLogin.setLayout(formularioLoginLayout);
         formularioLoginLayout.setHorizontalGroup(
             formularioLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formularioLoginLayout.createSequentialGroup()
+            .addGroup(formularioLoginLayout.createSequentialGroup()
                 .addGap(150, 150, 150)
                 .addComponent(TitleLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(150, 150, 150))
+                .addContainerGap(151, Short.MAX_VALUE))
         );
         formularioLoginLayout.setVerticalGroup(
             formularioLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -58,14 +58,14 @@ public class Login extends javax.swing.JFrame {
             backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(backgroundLayout.createSequentialGroup()
                 .addGap(300, 300, 300)
-                .addComponent(formularioLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(296, Short.MAX_VALUE))
+                .addComponent(formularioLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(286, Short.MAX_VALUE))
         );
         backgroundLayout.setVerticalGroup(
             backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(backgroundLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(formularioLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(formularioLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 604, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(50, Short.MAX_VALUE))
         );
 
@@ -73,7 +73,9 @@ public class Login extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, 1088, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
