@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View.Paneles;
+package View.Jpanel;
 
 /**
  *
  * @author bv587
  */
-public class Clientes extends javax.swing.JPanel {
+public class Productos extends javax.swing.JPanel {
 
     /**
-     * Creates new form Clientes
+     * Creates new form Productos
      */
-    public Clientes() {
+    public Productos() {
         initComponents();
     }
 
@@ -27,8 +27,9 @@ public class Clientes extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setBackground(new java.awt.Color(204, 255, 204));
+        setBackground(new java.awt.Color(153, 51, 255));
         setMinimumSize(new java.awt.Dimension(1100, 630));
+        setPreferredSize(new java.awt.Dimension(1100, 700));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -38,7 +39,7 @@ public class Clientes extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 630, Short.MAX_VALUE)
+            .addGap(0, 700, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 

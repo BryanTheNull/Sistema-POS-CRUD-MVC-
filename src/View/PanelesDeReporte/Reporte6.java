@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View.Paneles;
+package View.PanelesDeReporte;
 
 /**
  *
  * @author bv587
  */
-public class Proveedores extends javax.swing.JPanel {
+public class Reporte6 extends javax.swing.JPanel {
 
     /**
-     * Creates new form Proveedores
+     * Creates new form Reporte6
      */
-    public Proveedores() {
+    public Reporte6() {
         initComponents();
     }
 
@@ -27,18 +27,19 @@ public class Proveedores extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Background = new javax.swing.JPanel();
-
-        setMinimumSize(new java.awt.Dimension(1100, 630));
-        setLayout(new java.awt.BorderLayout());
-
-        Background.setBackground(new java.awt.Color(255, 255, 51));
-        Background.setLayout(new java.awt.BorderLayout());
-        add(Background, java.awt.BorderLayout.CENTER);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel Background;
     // End of variables declaration//GEN-END:variables
 }

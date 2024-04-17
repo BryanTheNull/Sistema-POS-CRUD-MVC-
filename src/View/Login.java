@@ -1,5 +1,7 @@
 package View;
 
+
+
 /**
  * @author 
  * @version 1.0
@@ -42,7 +44,7 @@ public class Login extends javax.swing.JFrame {
             .addGroup(formularioLoginLayout.createSequentialGroup()
                 .addGap(150, 150, 150)
                 .addComponent(TitleLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(151, Short.MAX_VALUE))
+                .addContainerGap(148, Short.MAX_VALUE))
         );
         formularioLoginLayout.setVerticalGroup(
             formularioLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

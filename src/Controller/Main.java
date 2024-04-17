@@ -23,5 +23,6 @@ public class Main {
         principal.setLocale(null);
         ImageIcon iconoInterfazPrincipal = new ImageIcon("src/Resources/icon_principal.png");
         principal.setIconImage(iconoInterfazPrincipal.getImage());
+        
     }
 }
