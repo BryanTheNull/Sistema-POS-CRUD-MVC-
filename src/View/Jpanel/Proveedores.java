@@ -29,12 +29,24 @@ public class Proveedores extends javax.swing.JPanel {
 
         Background = new javax.swing.JPanel();
 
-        setMinimumSize(new java.awt.Dimension(1100, 630));
-        setLayout(new java.awt.BorderLayout());
+        setMinimumSize(new java.awt.Dimension(1300, 700));
+        setPreferredSize(new java.awt.Dimension(1300, 700));
 
         Background.setBackground(new java.awt.Color(255, 255, 51));
+        Background.setMinimumSize(new java.awt.Dimension(1300, 700));
+        Background.setPreferredSize(new java.awt.Dimension(1300, 700));
         Background.setLayout(new java.awt.BorderLayout());
-        add(Background, java.awt.BorderLayout.CENTER);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
     }// </editor-fold>//GEN-END:initComponents
 
 

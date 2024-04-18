@@ -1,4 +1,4 @@
-package Controller;
+package Config;
 
 import View.InterfazPrincipal;
 

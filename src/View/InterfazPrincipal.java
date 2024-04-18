@@ -1,7 +1,9 @@
 package View;
 
+import Controller.CtrProducto;
 import View.Jpanel.Clientes;
 import View.Jpanel.Inicio;
+import View.Jpanel.NuevaVenta;
 import View.Jpanel.Productos;
 import View.Jpanel.Proveedores;
 import com.formdev.flatlaf.FlatLightLaf;
@@ -18,6 +20,13 @@ import javax.swing.JPanel;
  */
 public class InterfazPrincipal extends javax.swing.JFrame {
 
+    // Crear instancias de interfazes para manejar ventanas.
+    Productos panelProductos = new Productos();
+    CtrProducto controladorProducto = new CtrProducto(panelProductos);
+    
+    Clientes panelClientes = new Clientes();
+    
+    
     public InterfazPrincipal() {
         initComponents();    
                 
@@ -28,9 +37,7 @@ public class InterfazPrincipal extends javax.swing.JFrame {
         // Iniciar el programa con el menu Princial
         Inicio inicio = new Inicio();
         ShowPanel(inicio);
-        
-        
-        
+           
     }
     
     private void ShowPanel(JPanel p){
@@ -42,9 +49,7 @@ public class InterfazPrincipal extends javax.swing.JFrame {
         Contenedor.revalidate();
         Contenedor.repaint();
     }
-    
-    
-    
+
     void ConfigurarBarraNavegacion(){
         // BTN Inicio
         btnInicio.setBorder(null);
@@ -66,16 +71,18 @@ public class InterfazPrincipal extends javax.swing.JFrame {
         btnClientes.setForeground(Color.WHITE);
         
         // BTN Proveedores
+        btnProveedores.setBorder(null);
+        btnProveedores.setOpaque(false);
+        btnProveedores.setFocusPainted(false);
+        btnProveedores.setForeground(Color.WHITE);
+        
+        // BTN NuevaVenta   
         btnNuevaVenta.setBorder(null);
         btnNuevaVenta.setOpaque(false);
         btnNuevaVenta.setFocusPainted(false);
         btnNuevaVenta.setForeground(Color.WHITE);
         
-        
     }
-    
-    
-
   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -105,7 +112,6 @@ public class InterfazPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1300, 800));
-        setPreferredSize(new java.awt.Dimension(1300, 800));
 
         BarraNavegacion.setBackground(new java.awt.Color(23, 162, 180));
         BarraNavegacion.setMinimumSize(new java.awt.Dimension(1300, 100));
@@ -114,7 +120,6 @@ public class InterfazPrincipal extends javax.swing.JFrame {
         jLogo.setBackground(new java.awt.Color(255, 255, 255));
         jLogo.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
         jLogo.setForeground(new java.awt.Color(255, 255, 255));
-        jLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/contrasena.png"))); // NOI18N
         jLogo.setText("NOMBRE");
         jLogo.setMinimumSize(new java.awt.Dimension(128, 50));
         jLogo.setPreferredSize(new java.awt.Dimension(180, 50));
@@ -198,9 +203,9 @@ public class InterfazPrincipal extends javax.swing.JFrame {
             .addGroup(BarraNavegacionLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(BarraNavegacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLogo, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
                     .addComponent(btnInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnProductos, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+                    .addComponent(btnProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnClientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnNuevaVenta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnProveedores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -233,30 +238,31 @@ public class InterfazPrincipal extends javax.swing.JFrame {
 
     private void btnProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProductosActionPerformed
         // Cambiar panel
-        Productos productos = new Productos();
-        ShowPanel(productos);
+        ShowPanel(panelProductos);
+        
     }//GEN-LAST:event_btnProductosActionPerformed
 
     private void btnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientesActionPerformed
         // Cambiar Panel
-        Clientes clientes = new Clientes();
-        ShowPanel(clientes);
+        ShowPanel(panelClientes);
     }//GEN-LAST:event_btnClientesActionPerformed
 
     private void btnNuevaVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaVentaActionPerformed
         // Cambiar Panel
-        Proveedores proveedores = new Proveedores();
-        ShowPanel(proveedores);
+        NuevaVenta nuevaVenta = new NuevaVenta();
+        ShowPanel(nuevaVenta);
     }//GEN-LAST:event_btnNuevaVentaActionPerformed
 
     private void btnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioActionPerformed
         // Cambiar 
-        Inicio iniciobnt = new Inicio();
-        ShowPanel(iniciobnt);
+        Inicio inicio = new Inicio();
+        ShowPanel(inicio);
     }//GEN-LAST:event_btnInicioActionPerformed
 
     private void btnProveedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProveedoresActionPerformed
-        // TODO add your handling code here:
+        // Cambiar panel
+        Proveedores proveedores = new Proveedores();
+        ShowPanel(proveedores);
     }//GEN-LAST:event_btnProveedoresActionPerformed
 
 
